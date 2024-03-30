@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Peralta");
+@font-face {
+  font-family: RyeRegular;
+  src: url("../fonts/ryeregular.ttf");
+}
 #wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -206,7 +209,7 @@ a:active {
 .start-container #start-popup,
 .start-container #input-name,
 .start-container #submit {
-  font-family: "Peralta";
+  font-family: RyeRegular;
 }
 .start-container #submit {
   width: 6em;
@@ -261,38 +264,38 @@ header h1 {
 }
 
 h1 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1.8em;
 }
 
 h2 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1.6em;
 }
 
 h3 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1.3em;
 }
 
 h4 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1.2em;
 }
 
 h5 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1.1em;
 }
 
 h6 {
-  font-family: "Peralta";
+  font-family: RyeRegular;
   font-size: 1em;
 }
 
 body {
   margin: 0;
-  font-family: "Peralta";
+  font-family: RyeRegular;
   background-image: url("../images/western-landscape.jpeg");
   background-size: cover;
 }
@@ -355,7 +358,7 @@ section {
 }
 
 nav {
-  font-family: "Peralta";
+  font-family: RyeRegular;
 }
 nav a {
   display: block;
@@ -397,7 +400,7 @@ button,
   width: 10em;
   height: 2em;
   outline: none;
-  font-family: "Peralta";
+  font-family: RyeRegular;
 }
 
 .keys {

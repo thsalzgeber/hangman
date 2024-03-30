@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Peralta");
+@font-face {
+    font-family: RyeRegular;
+    src: url("../fonts/ryeregular.ttf");
+}
 
-$h-font: "Peralta";
-$body-font: "Peralta";
+$h-font: RyeRegular;
+$body-font: RyeRegular;
+$fontRubik: RyeRegular;
+$fontArimo: RyeRegular;
 
 
 $color-header: #dde7ef;
