@@ -1,0 +1,272 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "grid-layout.scss";
+@import "link.scss";
+@import "pop-up.scss";
+
+html {
+    box-sizing: border-box;
+    font-size: 1.0em;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    background: none;
+
+    h1 {
+        font-size: 2.1em;
+        font-weight: bold;
+    }
+}
+
+h1 {
+    font-family: $h-font;
+    font-size: 1.8em;
+}
+
+h2 {
+    font-family: $h-font;
+    font-size: 1.6em;
+}
+
+h3 {
+    font-family: $h-font;
+    font-size: 1.3em;
+}
+
+h4 {
+    font-family: $h-font;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-family: $h-font;
+    font-size: 1.1em;
+}
+
+h6 {
+    font-family: $h-font;
+    font-size: 1.0em;
+}
+
+body {
+    margin: 0;
+    font-family: $body-font;
+    background-image: url("../images/western-landscape.jpeg");
+    background-size: cover;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid $color-content-red;
+}
+
+header,
+main,
+footer,
+nav,
+#footer-info {
+    padding: 1em;
+    background: none;
+}
+
+section {
+    padding: 0.75em;
+    margin: 1em;
+}
+
+.game {
+    display: grid;
+    place-items: center;
+}
+
+.game,
+.game-instruction {
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.accordion-header {
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+#accordion {
+    p {
+        padding: 10px;
+    }
+}
+
+#game-image {
+    margin-bottom: 55px;
+}
+
+#container,
+#hint-section {
+    font-size: 1.3em;
+}
+
+#incorrect-guess,
+#incorrect-guess-count {
+    padding: 15px;
+    background-color: $color-link-hover;
+    border-radius: 10px;
+    display: none;
+}
+
+nav {
+    font-family: $body-font;
+
+    a {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 42px;
+        font-size: 1.1em;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: end;
+    }
+}
+
+p {
+    line-height: 1.4;
+}
+
+.site-image-right {
+    float: right;
+    margin-left: 15px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+
+}
+
+button,
+.keys {
+    background-color: $color-nav;
+    border-style: ridge;
+    border-color: $color-button-border;
+    border-radius: 5px;
+    width: 10em;
+    height: 2em;
+    outline: none;
+    font-family: $body-font;
+}
+
+.keys {
+    margin: 5px;
+    padding: 2px;
+    width: 4em;
+}
+
+#playagain-button {
+    margin-bottom: 20px;
+}
+
+button:hover,
+.keys:hover {
+    color: $color-content-red;
+    border-bottom: 3px solid $color-content-red;
+}
+
+#accordion {
+    h3:hover {
+        color: $color-content-red;
+        border-bottom: 3px solid $color-content-red;
+    }
+}
+
+.accordion-header {
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box {
+    width: 50px;
+    height: 20px;
+    border-bottom: 2px solid #333;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+footer,
+#footer-info {
+    line-height: 1.6;
+}
+
+#footer-info,
+#footer-content {
+    border-top: 3px solid $color-content-red;
+}
+
+@media screen and (min-width: 901px) and (max-width:1000px) {
+
+    html {
+        font-size: 0.95em;
+    }
+
+    #container,
+    #hint-section {
+        font-size: 1.15em;
+    }
+
+    .site-image-right {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width:701px) and (max-width:900px) {
+
+    html {
+        font-size: 0.85em;
+    }
+
+    #container,
+    #hint-section {
+        font-size: 1.15em;
+    }
+
+    .site-image-right {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    html {
+        font-size: 0.75em;
+    }
+
+    #container,
+    #hint-section {
+        font-size: 1.15em;
+    }
+
+    .site-image-right {
+        width: 50%;
+    }
+
+}

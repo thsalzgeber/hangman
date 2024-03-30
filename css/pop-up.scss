@@ -1,0 +1,80 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    background-color: $color-link-hover;
+    width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    border-color: $color-button-border;
+    transition: opacity 1s ease-in-out;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.start-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("../images/wanted_360-180.png");
+    background-size: cover;
+    text-align: center;
+    z-index: 2;
+
+    #start-popup-header {
+        font-size: 0.85em;
+        color: $color-content-red;
+    }
+
+    #start-popup-text,
+    #start-popup {
+        font-size: 0.90em;
+    }
+
+    #start-popup-header,
+    #start-popup,
+    #input-name,
+    #submit {
+        font-family: $body-font;
+    }
+
+    #submit {
+
+        width: 6em;
+        height: 2em;
+    }
+}
+
+.background-blocker {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.won-popup {
+    @include game-result-popup($won-color, $won-graphic);
+}
+
+.lost-popup {
+    @include game-result-popup($lost-color, $lost-graphic);
+}

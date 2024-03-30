@@ -1,0 +1,153 @@
+#wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "header         header          header"
+        "nav            nav             nav"
+        "main           main            main"
+        "footer-info    footer-info     footer-info"
+        "footer         footer          footer";
+}
+
+header {
+    grid-area: header;
+    height: 160px;
+    border-bottom: 2px solid $color-content-red;
+}
+
+nav {
+    grid-area: nav;
+    background-color: $color-nav;
+    top: 0;
+}
+
+main {
+    grid-area: main;
+    background: none;
+
+    #data {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "data-1 data-2"
+        ;
+    }
+}
+
+
+#data-1 {
+    grid-area: data-1;
+    background-image: url("../images/western.jpeg");
+}
+
+#data-2 {
+    grid-area: data-2;
+    background-image: url("../images/western-town.jpeg");
+}
+
+footer,
+#footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-info {
+    grid-area: footer-info;
+}
+
+#footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "footer-box-1 footer-box-2 footer-box-3"
+    ;
+}
+
+#footer-box-1 {
+    grid-area: footer-box-1;
+}
+
+#footer-box-2 {
+    grid-area: footer-box-2;
+}
+
+#footer-box-3 {
+    grid-area: footer-box-3;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "footer-1 footer-2 footer-3"
+    ;
+}
+
+#footer-1 {
+    grid-area: footer-1;
+}
+
+#footer-2 {
+    grid-area: footer-2;
+}
+
+#footer-3 {
+    grid-area: footer-3;
+}
+
+@media screen and (max-width:600px) {
+
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer-info"
+            "footer";
+    }
+
+    main {
+        #data {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "data-1"
+                "data-2";
+        }
+    }
+
+    #footer-info {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "footer-box-1"
+            "footer-box-2"
+            "footer-box-3"
+        ;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "footer-1"
+            "footer-2"
+            "footer-3"
+        ;
+    }
+
+    nav {
+        position: unset;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+}

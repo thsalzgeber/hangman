@@ -1,0 +1,54 @@
+a:link,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    background: none;
+}
+
+a {
+
+    &:link {
+        color: $color-link;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $color-content-red;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $color-link-hover;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-link-active;
+        text-decoration: underline;
+    }
+}
+
+.link-content {
+    a {
+        background: none;
+    }
+}
+
+#footer-info {
+    a {
+        background: none;
+    }
+}
+
+#footer-content {
+    a {
+        background: none;
+    }
+}
+
+#nocscript-link {
+    a {
+        text-decoration: underline;
+    }
+}
