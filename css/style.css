@@ -2,6 +2,56 @@
   font-family: RyeRegular;
   src: url("../fonts/ryeregular.ttf");
 }
+nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav .sub-nav {
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+}
+
+nav {
+  font-family: RyeRegular;
+}
+nav a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 42px;
+  font-size: 1.1em;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+
+.sub-nav a {
+  display: block;
+}
+
+.sub-nav {
+  display: none;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .sub-nav {
+  display: block;
+}
+
 #wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -355,24 +405,6 @@ section {
   background-color: #db8087;
   border-radius: 10px;
   display: none;
-}
-
-nav {
-  font-family: RyeRegular;
-}
-nav a {
-  display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 42px;
-  font-size: 1.1em;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  justify-content: end;
 }
 
 p {
