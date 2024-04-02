@@ -1,43 +1,10 @@
-nav>ul {
-    list-style: none;
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-
-}
-
-nav .sub-nav {
-    list-style: none;
-    padding: 0px;
-    position: absolute;
-}
-
-// nav a {
-//     display: block;
-//     // text-decoration: none;
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     line-height: 42px;
-//     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-//     font-size: 1.1em;
-// }
-
-// nav ul {
-//     margin: 0;
-//     padding: 0;
-//     display: flex;
-//     list-style-type: none;
-//     justify-content: end;
-// }
-
 nav {
-    font-family: $body-font;
-
     a {
         display: block;
         padding-left: 20px;
         padding-right: 20px;
         line-height: 42px;
+        font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
         font-size: 1.1em;
     }
 
@@ -50,22 +17,50 @@ nav {
     }
 }
 
-.sub-nav a {
-    display: block;
-}
-
-.sub-nav {
-    display: none;
-    min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $color-nav;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 
-.dropdown:hover .sub-nav {
+    a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    a:link {
+        color: $color-link;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $color-content-red;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-link-hover;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: $color-link-active;
+        text-decoration: underline;
+    }
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: $color-nav;
 }
