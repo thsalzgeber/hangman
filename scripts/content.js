@@ -9,6 +9,7 @@ document.querySelector('.home-image').innerHTML = `<img src="${pathToIcons}home-
 document.querySelector('.game-image').innerHTML = `<img src="${pathToIcons}game-18.png"> Games`;
 document.querySelector('.quiz-image').innerHTML = `<img src="${pathToIcons}quiz-18.png"> Quizzes`;
 document.querySelector('.footer-top').innerHTML = `<img src="${pathToIcons}arrow-up-18.png">  [ Top ]`;
+document.querySelector('.footer-sitemap').innerHTML = `<img src="${pathToIcons}sitemap-18.png">  Sitemap`;
 
 
 // Impressum Text

@@ -26,7 +26,6 @@ nav ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #eef3f7;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -55,10 +54,6 @@ nav ul {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #eef3f7;
 }
 
 #wrapper {
@@ -97,12 +92,12 @@ main #data {
 
 #data-1 {
   grid-area: data-1;
-  background-image: url("../images/western.jpeg");
+  background-image: url(../images/western.jpeg);
 }
 
 #data-2 {
   grid-area: data-2;
-  background-image: url("../images/western-town.jpeg");
+  background-image: url(../images/western-town.jpeg);
 }
 
 footer,
@@ -175,6 +170,9 @@ footer {
   nav ul {
     flex-direction: column;
     text-align: left;
+  }
+  .dropdown-content {
+    background-image: url(../images/western-landscape.jpeg);
   }
 }
 a:link,
@@ -355,7 +353,7 @@ h6 {
 body {
   margin: 0;
   font-family: RyeRegular;
-  background-image: url("../images/western-landscape.jpeg");
+  background-image: url(../images/western-landscape.jpeg);
   background-size: cover;
 }
 

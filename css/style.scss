@@ -60,7 +60,7 @@ h6 {
 body {
     margin: 0;
     font-family: $body-font;
-    background-image: url("../images/western-landscape.jpeg");
+    background-image: $background-image;
     background-size: cover;
 }
 
@@ -122,26 +122,6 @@ section {
     border-radius: 10px;
     display: none;
 }
-
-// nav {
-//     font-family: $body-font;
-
-//     a {
-//         display: block;
-//         padding-left: 20px;
-//         padding-right: 20px;
-//         line-height: 42px;
-//         font-size: 1.1em;
-//     }
-
-//     ul {
-//         margin: 0;
-//         padding: 0;
-//         display: flex;
-//         list-style-type: none;
-//         justify-content: end;
-//     }
-// }
 
 p {
     line-height: 1.4;

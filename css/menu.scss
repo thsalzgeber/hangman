@@ -25,7 +25,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: $color-nav;
+    // background-color: $color-nav;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -61,6 +61,6 @@ nav {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: $color-nav;
-}
+// .dropdown:hover .dropbtn {
+//     background-color: $color-nav;
+// }

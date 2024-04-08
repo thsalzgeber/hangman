@@ -43,12 +43,12 @@ main {
 
 #data-1 {
     grid-area: data-1;
-    background-image: url("../images/western.jpeg");
+    background-image: $background-western;
 }
 
 #data-2 {
     grid-area: data-2;
-    background-image: url("../images/western-town.jpeg");
+    background-image: $background-westerntown;
 }
 
 footer,
@@ -148,6 +148,10 @@ footer {
     nav ul {
         flex-direction: column;
         text-align: left;
+    }
+
+    .dropdown-content {
+        background-image: $background-image;
     }
 
 }
