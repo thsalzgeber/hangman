@@ -8,6 +8,7 @@ const pathToIcons = title === "page not found" ? "/jsprojects/icons/" : "icons/"
 document.querySelector('.home-image').innerHTML = `<img src="${pathToIcons}home-18.png"> Home`;
 document.querySelector('.game-image').innerHTML = `<img src="${pathToIcons}game-18.png"> Games`;
 document.querySelector('.quiz-image').innerHTML = `<img src="${pathToIcons}quiz-18.png"> Quizzes`;
+document.querySelector('.other-image').innerHTML = `<img src="${pathToIcons}other-18.png"> Other`;
 document.querySelector('.footer-top').innerHTML = `<img src="${pathToIcons}arrow-up-18.png">  [ Top ]`;
 document.querySelector('.footer-sitemap').innerHTML = `<img src="${pathToIcons}sitemap-18.png">  Sitemap`;
 
