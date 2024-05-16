@@ -8,3 +8,6 @@ Features
 - Visual representation of the hangman's gallows and the current state of the word being guessed.
 - Feedback messages for correct and incorrect guesses.
 - Win and lose conditions with appropriate messages.
+
+Link to website:
+[Hangman](https://www.stnet.at/jsprojects/hangman/index.html)
