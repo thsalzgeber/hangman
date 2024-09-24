@@ -18,7 +18,7 @@ document.getElementById("impressum-date").innerHTML = "&copy April 2024";
 document.getElementById("impressum-name").innerHTML = "Thomas Salzgeber";
 
 // Email address
-const emailAddress = "\u0074\u0068\u006f\u006d\u0061\u0073\u0040\u0077\u0065\u0062\u0064\u0065\u0076\u002e\u0073\u0074\u006e\u0065\u0074\u002e\u0061\u0074";
+const emailAddress = "\u0077\u0065\u0062\u0064\u0065\u0076\u0040\u0065\u0076\u006f\u006c\u0075\u0074\u0069\u006f\u006e\u0077\u0065\u0062\u002e\u0063\u0061";
 
 function link(text, href) {
     let a = document.createElement("a");
